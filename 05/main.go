@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// Завершаем работу не менее чем через N секунд
 func consistentlyByTimer(timerSecond uint) {
 
 	// создаем канал
