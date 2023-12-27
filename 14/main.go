@@ -5,6 +5,7 @@ import (
 	"reflect"
 )
 
+// определям тип с помощью пакета reflect
 func defineTypeByReflect(t interface{}) {
 	// вспользуемся Kind, чтобы определять любой канал,как канал
 	switch reflect.TypeOf(t).Kind() {
@@ -24,7 +25,7 @@ func defineTypeByReflect(t interface{}) {
 
 }
 
-// определаем тип переданного интерфейса
+// определаем тип
 func defineType(t interface{}) {
 	switch t.(type) {
 
